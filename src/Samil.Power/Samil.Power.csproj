@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Samil.Power</Title>
+        <Authors>Albert Hoekstra</Authors>
+        <Copyright>Albert Hoekstra</Copyright>
+        <PackageProjectUrl>https://github.com/alberthoekstra/Samil.Portal</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/alberthoekstra/Samil.Portal</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
