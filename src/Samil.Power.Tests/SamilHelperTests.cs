@@ -16,6 +16,19 @@ namespace Samil.Power.Tests
         {
             _testOutputHelper = testOutputHelper;
         }
+        
+        [Fact]
+        public void TryExportYearValues()
+        {
+            var helper = new SamilHelper(StationName);
+
+            for (var i = 2015; i <= 2019; i++)
+            {
+                var tryGetValues = helper.TryGetValues(x=>x.GetYearValues(i));
+                tryGetValues.ShouldNotBeNull();
+                tryGetValues.Year.ShouldBe(i);
+            }
+        }
 
         [Fact]
         public void GetThisYearValues()
